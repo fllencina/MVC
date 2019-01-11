@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Pruebas.Datos", "Alpha.Pruebas.Datos\Alpha.Pruebas.Datos.csproj", "{AD4D8880-C9AC-4E0E-AF46-09257BB13AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Pruebas.Modelo", "Alpha.Pruebas.Modelo\Alpha.Pruebas.Modelo.csproj", "{4AD59C68-0DF0-4555-A86D-3FF23E53F1C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Pruebas.Web", "Alpha.Pruebas.Web\Alpha.Pruebas.Web.csproj", "{74BFABC8-8C73-4420-A11E-61638F362285}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.90:9500/tfs/ar
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Alpha.Pruebas.Datos\\Alpha.Pruebas.Datos.csproj
+		SccProjectName1 = Alpha.Pruebas.Datos
+		SccLocalPath1 = Alpha.Pruebas.Datos
+		SccProjectUniqueName2 = Alpha.Pruebas.Modelo\\Alpha.Pruebas.Modelo.csproj
+		SccProjectName2 = Alpha.Pruebas.Modelo
+		SccLocalPath2 = Alpha.Pruebas.Modelo
+		SccProjectUniqueName3 = Alpha.Pruebas.Web\\Alpha.Pruebas.Web.csproj
+		SccProjectName3 = Alpha.Pruebas.Web
+		SccLocalPath3 = Alpha.Pruebas.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD4D8880-C9AC-4E0E-AF46-09257BB13AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4D8880-C9AC-4E0E-AF46-09257BB13AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4D8880-C9AC-4E0E-AF46-09257BB13AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4D8880-C9AC-4E0E-AF46-09257BB13AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AD59C68-0DF0-4555-A86D-3FF23E53F1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD59C68-0DF0-4555-A86D-3FF23E53F1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD59C68-0DF0-4555-A86D-3FF23E53F1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD59C68-0DF0-4555-A86D-3FF23E53F1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BFABC8-8C73-4420-A11E-61638F362285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BFABC8-8C73-4420-A11E-61638F362285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BFABC8-8C73-4420-A11E-61638F362285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BFABC8-8C73-4420-A11E-61638F362285}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

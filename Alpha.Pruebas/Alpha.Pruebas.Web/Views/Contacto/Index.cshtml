@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Alpha.Pruebas.Modelo.Model.Contacto>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Contactos</h2>
+
+<div id="divListaContactos">
+
+    @{
+        foreach (Alpha.Pruebas.Modelo.Model.Contacto Contacto in Model)
+        {
+            @(Contacto.Nombre)
+            @(',')
+            @(Contacto.Telefono)
+        
+        <br />
+        }
+    }
+
+</div>

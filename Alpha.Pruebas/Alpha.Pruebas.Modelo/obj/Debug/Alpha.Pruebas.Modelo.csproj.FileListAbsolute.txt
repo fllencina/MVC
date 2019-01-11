@@ -1,0 +1,12 @@
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\Alpha.Pruebas.Modelo.dll.config
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\Alpha.Pruebas.Modelo.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\Alpha.Pruebas.Modelo.pdb
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\EntityFramework.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\EntityFramework.xml
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\obj\Debug\Alpha.Pruebas.Modelo.csprojResolveAssemblyReference.cache
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\obj\Debug\Alpha.Pruebas.Modelo.dll
+C:\Users\fernanda\Documents\Visual Studio 2013\Projects\Alpha.Pruebas\Alpha.Pruebas.Modelo\obj\Debug\Alpha.Pruebas.Modelo.pdb

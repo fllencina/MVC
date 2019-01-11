@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Telefono</title>
+</head>
+
+
+<body>
+
+    <script>
+
+        var pantallaNumeros = [];
+        var contactos = [];
+        function Ver(NumeroPresionado) {
+
+            //El objetivo de esta funcion va a ser agregar el numero presionado que llega como parametro a la pantalla del telefono (divPantalla)
+            //El numero presionado se va a representar en divPantallaNumero y se va a agregar dinamicamente en divPantalla
+
+            //Creamos el div que representa un numero en pantalla dinamicamente
+            var divPantallaNumero = document.createElement('div');
+            var divContactoNombre = document.createElement('div');
+            //divContactoNombre.innerHTML ='Nombre:<br><input type="text" name="nombre" id="nombre">'
+
+            divContactoNombre.className = 'pantallaContacto';
+            divPantallaNumero.className = 'PantallaNumero';
+            divPantallaNumero.innerHTML = NumeroPresionado;
+            //divPantallaNumero.innerHTML = pantallaNumeros;
+
+            pantallaNumeros.push(divPantallaNumero);
+
+
+            //divPantallaNumero ya esta creado en memoria. Agregar divPantallaNumero a divPantalla usando appendChild
+
+            divPantalla.appendChild(divPantallaNumero);
+
+            //------------------------------
+
+            //Tener en cuenta que cada vez que se aprieta un boton se va a crear un divPantallaNumero que se va a anexar a divPantalla
+            //Va a quedar un numero abajo del otro. Arreglar para que aparezca un numero al lado del otro
+
+        }
+        function Llamar() {
+            alert("RING");
+        }
+        function Borrar() {
+            if (pantallaNumeros.length > 0) {
+                divPantalla.removeChild(pantallaNumeros[pantallaNumeros.length - 1]);
+                pantallaNumeros.splice(pantallaNumeros.length - 1, 1);
+            }
+        }
+        function BorrarTodo() {
+            divPantalla.innerHTML = "";
+            pantallaNumeros = [];
+        }
+        function Agregar() {
+            var nombreIngresado = document.getElementById('NombreInput');
+            var tel = "";
+            var i;
+            for (i = 0; i <= pantallaNumeros.length - 1; i++) {
+                tel = tel + (pantallaNumeros[i].value);
+                alert(tel);
+            }
+            var contacto = { nombre: nombreIngresado.value, telefono: tel }
+            contactos.push(contacto);
+            alert("Contacto Agregado correctamente");
+            alert(contactos[contactos.length - 1].nombre);
+            alert(contactos[contactos.length - 1].telefono);
+        }
+    </script>
+
+    <style>
+        .PantallaNumero {
+            display: inline;
+            font-size: 40px;
+            background-color: white;
+            position: relative;
+            width: 400px;
+            height: 50px;
+        }
+
+        body {
+            background-color: #CFCDCD;
+        }
+
+        .BotonNumerico {
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            width: 50px;
+            height: 50px;
+            background-color: #AAA8A8;
+        }
+
+        .numero {
+            position: absolute;
+            left: 17px;
+            top: 9px;
+            font-size: 30px;
+        }
+    </style>
+
+
+
+    <h1 style="color:white;margin-left:100px">Telefono</h1>
+    <!--<div id="resultado" style="font-size: 40px; color: white; display: none; position: relative; width: 400px; height: 50px; border: solid; border-color: black; border-width: 2px; "></div>-->
+    <div id="divPantalla">
+
+    </div>
+    <br />
+    <div id="Nombre" class="IngresoNombre">
+        Nombre de contacto
+        <br />
+        <input id="NombreInput" type="text" name="nombreInput" style="font-size:20px" />
+    </div>
+    <br />
+    <div style="position: relative; width: 500px; height: 300px; border: solid; border-color: black;border-width:2px">
+        <div class=" BotonNumerico" style="position: absolute; left: 20px; top: 20px" onclick="Ver(1)">
+            <div class="numero" id="divNumero1">
+                1
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 90px; top: 20px" onclick="Ver('2')">
+            <div class="numero" id="divNumero2">
+                2
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 160px; top: 20px" onclick="Ver('3')">
+            <div class="numero" id="divNumero3">
+                3
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 20px; top: 90px" onclick="Ver('4')">
+            <div class="numero" id="divNumero4">
+                4
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 90px; top: 90px" onclick="Ver('5')">
+            <div class="numero" id="divNumero5">
+                5
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left:160px; top: 90px" onclick="Ver('6')">
+            <div class="numero" id="divNumero6">
+                6
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 20px; top: 160px" onclick="Ver('7')">
+            <div class="numero" id="divNumero7">
+                7
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 90px; top: 160px" onclick="Ver('8')">
+            <div class="numero" id="divNumero8">
+                8
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 160px; top: 160px" onclick="Ver('9')">
+            <div class="numero" id="divNumero9">
+                9
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 20px; top: 230px" onclick="Ver('*')">
+            <div class="numero" id="divNumero*">
+                *
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 90px; top: 230px" onclick="Ver('0')">
+            <div class="numero" id="divNumero0">
+                0
+            </div>
+        </div>
+        <div class=" BotonNumerico" style="position: absolute; left: 160px; top: 230px" onclick="Ver('#')">
+            <div class="numero" id="divNumero#">
+                #
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------------------- -->
+        <!-- botones llamar borrar y borrar todo -->
+        <!-- -------------------------------------------------------------------------- -->
+
+        <div class="Llamar" style="position: absolute; left: 230px; top: 30px; width: 100px; height: 50px; text-align: center; font-size: 20px; color: white; border: solid; border-width: 2px; border-color: black; background-color: #AAA8A8; display: inline;" onclick="Llamar()">
+            LLAMAR
+            <i class="material-icons">phone</i>
+        </div>
+        <div class="Borrar" style="position: absolute; left: 230px; top: 110px; width: 100px; height: 50px; text-align: center; font-size: 20px; color: white; border: solid; border-width: 2px; border-color: black; background-color: #AAA8A8; " onclick="Borrar()">
+            BORRAR
+            <br />
+            <i class="material-icons">delete</i>
+        </div>
+        <div class="BorrarTodo" style="position: absolute; left: 230px; top: 190px; width: 100px; height: 70px; text-align: center; font-size: 20px; color: white; border: solid; border-width: 2px; border-color: black; background-color: #AAA8A8; " onclick="BorrarTodo()">
+            BORRAR
+            <br />
+            TODO
+            <br />
+            <i class="material-icons">delete</i>
+        </div>
+        <!-- -------------------------------------------------------------------------- -->
+        <!-- botones manejo de contactos -->
+        <!-- -------------------------------------------------------------------------- -->
+        <div id="divContactos">
+
+        </div>
+        <div class="Agregar" style="position: absolute; left: 350px; top: 30px; width: 100px;height:50px; text-align: center; font-size: 20px; color: white; border: solid; border-width: 2px; border-color: black; background-color: #AAA8A8;display:inline " onclick="Agregar()">
+            AGREGAR
+            <i class="material-icons">save</i>
+
+        </div>
+        <div class="Editar" style="position: absolute; left: 350px; top: 110px; width: 100px; height: 50px; text-align: center; font-size: 20px; color: white; border: solid; border-width: 2px; border-color: black; background-color: #AAA8A8; " onclick="Borrar()">
+            EDITAR
+            <br />
+            <i class="material-icons">edit</i>
+        </div>
+        <div class="Borrar" style="position: absolute; left: 350px; top: 190px; width: 100px; height: 60px; text-align: center; font-size: 20px; color: white; border: solid;padding-top:10px; border-width: 2px; border-color: black; background-color: #AAA8A8; " onclick="BorrarTodo()">
+            ELIMINAR
+            <br />
+            <i class="material-icons">delete</i>
+        </div>
+    </div>
+</body>
+</html>
+
